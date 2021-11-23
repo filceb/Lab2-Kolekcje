@@ -18,11 +18,12 @@ public class PersonConsoleApp {
 			"0 - Zakończ program        \n";
 
 	private static final String MENU = 
-			"    M E N U   G Ł Ó W N E  \n" +
-			"1 - Podaj dane nowej osoby \n" +
-			"2 - Wypisz listę osób		\n" +
+			"    M E N U   G Ł Ó W N E  	\n" +
+			"1 - Podaj dane nowej osoby		\n" +
+			"2 - Wypisz listę osób			\n" +
 			"3 - Dodaj 2 razy tą samą osobę \n" +
-			"0 - Zakończ program        \n";	
+			"4 - Wyczyść listę osób 		\n" +
+			"0 - Zakończ program       		\n";
 
 
 	private static final ConsoleUserDialog UI = new ConsoleUserDialog();
@@ -155,6 +156,16 @@ public class PersonConsoleApp {
 					peopleM.put(66, person6);
 					System.out.println("\nDrugie dodanie:");
 					printMap();
+				}
+			}
+			break;
+
+			case 4:{
+				if(x==0) {
+					people.clear();
+				}
+				if(x==1) {
+					peopleM.clear();
 				}
 			}
 			break;
